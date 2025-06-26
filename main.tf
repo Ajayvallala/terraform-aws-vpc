@@ -3,8 +3,6 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = "true"
   instance_tenancy     = "default"
 
-  
-
   tags = merge(
     var.vpc_tags,
     local.common_tags, {
